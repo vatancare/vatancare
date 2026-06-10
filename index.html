@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* TOP 1% ARCHITECTURAL ROUTING ENGINE CSS */
+        /* ARCHITECTURAL ROUTING ENGINE CSS */
         .page-view {
             display: none;
             opacity: 0;
@@ -19,13 +19,13 @@
             opacity: 1;
             transform: translateY(0);
         }
-        
+       
         /* Strict Dual-Language Layout Toggle Engine */
         .lang-en .text-gu, .lang-gu .text-en {
             display: none !important;
         }
 
-        /* TOP 1% PREMIUM ULTRA-MODERN LUXURY UI STYLING */
+        /* PREMIUM ULTRA-MODERN LUXURY UI STYLING */
         .premium-card {
             transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
             border: 1px solid rgba(226, 232, 240, 0.8);
@@ -77,15 +77,26 @@
         .loading-spin-icon {
             animation: spinner-rotation 0.8s linear infinite;
         }
+
+        /* SHIMMER GLOW FOR THE TOP CONVERTING ANNUAL CARD */
+        @keyframes border-rainbow-glow {
+            0% { border-color: #f59e0b; box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.2); }
+            50% { border-color: #2563eb; box-shadow: 0 10px 35px -5px rgba(37, 99, 235, 0.4); }
+            100% { border-color: #f59e0b; box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.2); }
+        }
+        .best-value-card {
+            animation: border-rainbow-glow 4s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="bg-slate-50/50 text-slate-900 font-sans antialiased flex flex-col min-h-screen lang-en" id="root-viewport">
 
+    <!-- GLOBAL TOP BANNER NODE -->
     <div class="bg-slate-950 text-white text-xs py-3 px-4 border-b border-slate-800 shrink-0 tracking-wide">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2.5">
             <div class="flex items-center gap-3 font-semibold text-slate-300">
                 <span class="inline-flex items-center gap-2">
-                    <i class="fa-solid fa-location-dot text-amber-500 animate-pulse"></i> 
+                    <i class="fa-solid fa-location-dot text-amber-500 animate-pulse"></i>
                     <span class="text-en">Visnagar Command Center: Kansa Chokdi Hub, Mehsana Region</span>
                     <span class="text-gu">મુખ્ય વહીવટી મથક: કાંસા ચોકડી હબ, વિસનગર (મહેસાણા)</span>
                 </span>
@@ -100,7 +111,7 @@
                 </a>
                 <span class="text-slate-800 hidden md:inline">|</span>
                 <span class="text-emerald-400 flex items-center gap-1.5">
-                    <i class="fa-solid fa-shield-halved text-xs"></i> 
+                    <i class="fa-solid fa-shield-halved text-xs"></i>
                     <span class="text-en">NRI Verified WhatsApp Connection Active</span>
                     <span class="text-gu">વોટ્સએપ ઓન-ગ્રાઉન્ડ લાઈન ચાલુ છે</span>
                 </span>
@@ -108,9 +119,10 @@
         </div>
     </div>
 
+    <!-- SYSTEM HEADER CONTROLLER -->
     <header class="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 shadow-sm shrink-0 transition-all">
         <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
-            
+           
             <button onclick="navigateTo('home')" class="flex items-center gap-3.5 text-left focus:outline-none group">
                 <div class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-amber-700 text-white w-14 h-14 rounded-2xl shadow-xl flex items-center justify-center group-hover:rotate-1 transition-transform">
                     <span class="text-xl font-black tracking-tighter text-amber-400">VC</span>
@@ -126,7 +138,7 @@
                     </span>
                 </div>
             </button>
-            
+           
             <div class="flex items-center gap-6">
                 <nav class="hidden lg:flex items-center gap-8 font-bold text-slate-600 text-xs uppercase tracking-widest">
                     <button id="nav-home" onclick="navigateTo('home')" class="text-amber-600 transition-colors">
@@ -154,13 +166,14 @@
 
     <main class="grow">
 
+        <!-- HOME VIEW FRAMEWORK -->
         <div id="page-home" class="page-view active">
             <section class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white py-16 lg:py-24 px-6 overflow-hidden border-b border-slate-800">
                 <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10 items-center">
-                    
+                   
                     <div class="lg:col-span-7 space-y-8">
                         <div class="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 px-3.5 py-2 rounded-xl text-xs font-bold text-amber-400 tracking-wide uppercase">
-                            <i class="fa-solid fa-medal"></i> 
+                            <i class="fa-solid fa-medal"></i>
                             <span class="text-en">Visnagar Roots, Global Peace of Mind</span>
                             <span class="text-gu">વિસનગરવાસીઓ માટે ખાસ ભરોસાપાત્ર પ્લેટફોર્મ</span>
                         </div>
@@ -172,7 +185,7 @@
                             <span class="text-en">No matter how many video calls you make or how often you send packages, the distance between you and your loved ones can feel heavier with every passing year. Caring for ageing parents is an emotional journey on its own, but doing it from thousands of miles away comes with unique challenges that love alone cannot solve. This is the story of nearly every Non-Resident Indian (NRI) — a story of love, guilt, longing, and responsibility.</span>
                             <span class="text-gu">તમે ગમે તેટલા વિડીયો કોલ કરો કે પાર્સલ મોકલો, પણ ભૌગોલિક અંતર હંમેશા વધુ ભારે લાગે છે. મોટી ઉંમરના માતા-પિતાની સંભાળ રાખવી એ એક લાગણીશીલ સફર છે, પરંતુ હજારો માઈલ દૂર રહીને જવાબદારી નિભાવવી એવા પડકારો લાવે છે જે માત્ર પ્રેમથી ઉકેલી શકાતા નથી. આ દરેક NRI ની વાર્તા છે — પ્રેમ, અપરાધભાવ (Guilt), ઝંખના અને જવાબદારીની વાર્તા.</span>
                         </p>
-                        
+                       
                         <div class="w-full h-56 sm:h-72 rounded-3xl overflow-hidden shadow-2xl border border-slate-700/40 relative">
                            <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=800&q=80" alt="Elderly Care and Property Management" class="w-full h-full object-cover">
                          </div>
@@ -184,7 +197,7 @@
                             </button>
                         </div>
                     </div>
-                    
+                   
                     <div class="lg:col-span-5 bg-slate-900/60 backdrop-blur-md border border-slate-800 rounded-3xl p-6 sm:p-10 space-y-6 shadow-2xl">
                         <h3 class="text-sm font-black text-amber-400 uppercase tracking-wider border-b border-slate-800 pb-3 flex items-center gap-2">
                             <i class="fa-solid fa-triangle-exclamation"></i>
@@ -200,6 +213,7 @@
                 </div>
             </section>
 
+            <!-- TESTIMONIAL ENGINE -->
             <section class="py-24 px-6 max-w-7xl mx-auto space-y-24">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <div class="space-y-5">
@@ -215,24 +229,13 @@
                     <div class="bg-amber-500/5 p-8 rounded-3xl border border-amber-500/20 space-y-4 shadow-sm">
                         <h4 class="font-black text-slate-950 text-base flex items-center gap-2">
                             <i class="fa-solid fa-heart-pulse text-amber-500"></i>
-                            <span class="text-en">When Emergencies Happen</span><span class="text-gu">જ્યારે અચાનક હોસ્પિટલની સ્થિતિ આવે</span>
+                            <span class="text-en">Structured Framework Protection</span><span class="text-gu">જવાબદારી અને કાયમી સિક્યોરિટી</span>
                         </h4>
                         <p class="text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
-                            <span class="text-en">And when emergencies happen, such as a sudden hospitalisation, a missed call during a crisis, or a delay in arranging care, the distance becomes painfully real. In addition to being separated by geography and time zones, you are unable to fulfill your responsibilities. That can cause feelings of helplessness.</span>
-                            <span class="text-gu">જ્યારે અચાનક હોસ્પિટલમાં દાખલ થવું પડે, કટોકટી વખતે ફોન મિસ થઈ જાય અથવા સારવારની વ્યવસ્થામાં વિલંબ થાય, ત્યારે આ ભૌગોલિક અંતર ખૂબ જ પીડાદાયક લાગે છે. ટાઇમ ઝોનના તફાવતને કારણે વિદેશ બેઠા લાચારીનો મોટો અનુભવ થાય છે.</span>
+                            <span class="text-en">When situations occur, such as property structural damages or missed local paperwork lines, geography becomes a hurdle. In addition to being separated by time zones, lack of verified on-ground eyes brings heavy functional friction.</span>
+                            <span class="text-gu">જառે વતનમાં મકાનના પ્રશ્નો અથવા દસ્તાવેજી વહીવટો અટકે, ત્યારે ભૌગોલિક અંતર મોટો અવરોધ બને છે. ટાઇમ ઝોનના તફાવતને કારણે વિદેશ બેઠા લાચારીનો મોટો અનુભવ થાય છે જેને વતન કેર દૂર કરે છે.</span>
                         </p>
                     </div>
-                </div>
-
-                <div class="bg-white border border-gray-100 p-8 sm:p-12 rounded-3xl text-center max-w-4xl mx-auto space-y-5 shadow-xl shadow-slate-100/50">
-                    <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                        <span class="text-en">Why Informal Fixes Are Not Enough</span>
-                        <span class="text-gu">સ્થાનિક હંગામી વ્યવસ્થાઓ શા માટે પૂરતી નથી?</span>
-                    </h3>
-                    <p class="text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed font-medium">
-                        <span class="text-en">Sending money home, hiring a local helper, or relying on relatives might seem like solutions, but they often fail to address the root problem: consistency, accountability, and emotional connection. Elder care is not just about checking boxes. It requires a structured, trusted system that truly stands in for you when you are unable to be there.</span>
-                        <span class="text-gu">માત્ર પૈસા મોકલવા, હેલ્પર રાખવા કે સગા-સંબંધી પર નિર્ભર રહેવું એ કાયમી ઉકેલ નથી, કારણ કે તેમાં સાતત્ય અને જવાબદારીનો અભાવ હોય છે. વડીલોની સારસંભાળ માટે એક એવી મજબૂત અને પ્રોફેશનલ સિસ્ટમની જરૂર છે જે તમારી ગેરહાજરીમાં તમારા જેવો જ આદર અને કાળજી આપી શકે.</span>
-                    </p>
                 </div>
 
                 <div class="space-y-12">
@@ -249,7 +252,7 @@
                             </div>
                         </div>
                         <div class="premium-card bg-white p-8 rounded-3xl shadow-sm flex flex-col justify-between space-y-6">
-                            <p class="text-xs sm:text-sm text-gray-600 italic font-medium leading-relaxed">"My elderly parents live alone in Vijay Para. When my father needed a specialist hospital checkup in Mehsana, Vatan Care arranged a safe vehicle and their executive stayed with them throughout."</p>
+                            <p class="text-xs sm:text-sm text-gray-600 italic font-medium leading-relaxed">"My elderly parents live alone in Vijay Para. Vatan Care organizes physical documentation tracking, updates cooperative bank passbooks and coordinates utilities seamlessly."</p>
                             <div class="flex items-center gap-3.5 border-t border-gray-100 pt-5">
                                 <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" class="w-11 h-11 rounded-full object-cover border-2 border-amber-500 shadow-sm">
                                 <div><h4 class="font-extrabold text-slate-950 text-xs">Deepa Shah</h4><span class="text-[10px] text-gray-400 font-bold uppercase tracking-wider">London, UK</span></div>
@@ -267,6 +270,7 @@
             </section>
         </div>
 
+        <!-- SERVICES DIRECTORY (PREMIUM GRADIENT GRAPHICS PORTAL) -->
         <div id="page-services" class="page-view">
             <section class="bg-slate-950 text-white py-20 px-6 text-center">
                 <div class="max-w-3xl mx-auto space-y-3">
@@ -279,8 +283,10 @@
             </section>
 
             <section class="max-w-7xl mx-auto py-24 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+               
+                <!-- SERVICE 1 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
-                    <div class="h-48 w-full overflow-hidden"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover"></div>
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Property inspection and control">
                     <div class="p-8 space-y-3.5 grow">
                         <h3 class="text-lg font-black text-slate-950">
                             <span class="text-en">1. "Maru Ghar" Property Control</span><span class="text-gu">૧. "મારું ઘર" પ્રોપર્ટી સુરક્ષા અને ઓડિટ</span>
@@ -291,8 +297,10 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- SERVICE 2 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
-                    <div class="h-48 w-full overflow-hidden"><img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover"></div>
+                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Elderly medical care and escort">
                     <div class="p-8 space-y-3.5 grow">
                         <h3 class="text-lg font-black text-slate-950">
                             <span class="text-en">2. "Mata-Pita" Medical Escort</span><span class="text-gu">૨. "માતા-પિતા" હોસ્પિટલ મેડિકલ ગાઈડ સેવા</span>
@@ -303,8 +311,10 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- SERVICE 3 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
-                    <div class="h-48 w-full overflow-hidden"><img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover"></div>
+                    <img src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Banking and financial liaison">
                     <div class="p-8 space-y-3.5 grow">
                         <h3 class="text-lg font-black text-slate-950">
                             <span class="text-en">3. Advanced Banking Liaison</span><span class="text-gu">૩. બેંક વહીવટ અને સરકારી ડોક્યુમેન્ટ કામકાજ</span>
@@ -315,8 +325,10 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- SERVICE 4 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
-                    <div class="h-48 w-full overflow-hidden"><img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover"></div>
+                    <img src="https://images.unsplash.com/photo-1587745416684-47953f16fda3?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="24/7 emergency ambulance response">
                     <div class="p-8 space-y-3.5 grow">
                         <h3 class="text-lg font-black text-slate-950">
                             <span class="text-en">4. 24/7 Emergency Quick-Response</span><span class="text-gu">૪. ૨૪/૭ તાત્કાલિક કટોકટી ઇમરજન્સી સેવા</span>
@@ -327,8 +339,10 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- SERVICE 5 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
-                    <div class="h-48 w-full overflow-hidden"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover"></div>
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Home renovation and repair service">
                     <div class="p-8 space-y-3.5 grow">
                         <h3 class="text-lg font-black text-slate-950">
                             <span class="text-en">5. Renovation & Vendor Control</span><span class="text-gu">૫. ઘર રીપેરીંગ, કલર અને વેન્ડર પ્રોજેક્ટ કંટ્રોલ</span>
@@ -339,8 +353,10 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- SERVICE 6 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
-                    <div class="h-48 w-full overflow-hidden"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover"></div>
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Digital literacy support for elderly">
                     <div class="p-8 space-y-3.5 grow">
                         <h3 class="text-lg font-black text-slate-950">
                             <span class="text-en">6. Digital Literacy Support</span><span class="text-gu">૬. ડિજિટલ સાક્ષરતા અને વિડીયો કોલ સેટઅપ સપોર્ટ</span>
@@ -351,8 +367,10 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- SERVICE 7 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
-                    <div class="h-48 w-full overflow-hidden"><img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover"></div>
+                    <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Safe elderly transport logistics">
                     <div class="p-8 space-y-3.5 grow">
                         <h3 class="text-lg font-black text-slate-950">
                             <span class="text-en">7. Bespoke Transport Logistics</span><span class="text-gu">૭. વડીલો માટે ખાસ અને સુરક્ષિત ટ્રાવેલ વ્યવસ્થા</span>
@@ -363,8 +381,10 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- SERVICE 8 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
-                    <div class="h-48 w-full overflow-hidden"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover"></div>
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Utility bill payment and automation">
                     <div class="p-8 space-y-3.5 grow">
                         <h3 class="text-lg font-black text-slate-950">
                             <span class="text-en">8. Utility Bill Automation</span><span class="text-gu">૮. ઘરવેરો, લાઈટ બિલ અને ગેસ બિલ ઓટોમેશન</span>
@@ -375,18 +395,23 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- SERVICE 9 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
-                    <div class="h-48 w-full overflow-hidden"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover"></div>
+                    <div class="h-48 w-full bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 flex items-center justify-center text-4xl text-emerald-400">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </div>
                     <div class="p-8 space-y-3.5 grow">
                         <h3 class="text-lg font-black text-slate-950">
                             <span class="text-en">9. Monthly Grocery Management</span><span class="text-gu">૯. કરિયાણું, અનાજ અને દવાઓનું હોમ ડિલિવરી મેનેજમેન્ટ</span>
                         </h3>
                         <p class="text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
                             <span class="text-en">Procurement of kitchen assets paired with strict critical medication stock balances checkups.</span>
-                            <span class="text-gu">મહિનાનું આખું કરિયાણું, અનાજ અને બીપી-ડાયાબિટીસની દવાઓનો સ્ટોક પૂરો થાય તે પહેલા વડીલોના રસોડા સુધી પહોંચાડવાની વ્યવસ્થા.</span>
+                            <span class="text-gu">મહિનાનું આખું કરિયાણું, અનાજ અને બીપી-ડાયાબિટીસની દવાઓનો સ્ટોક પૂરો થાય તે પહેલા વડીલોના રસોડા સુધી પહોંચાડાવાની વ્યવસ્થા.</span>
                         </p>
                     </div>
                 </div>
+
             </section>
 
             <div class="text-center pb-24">
@@ -397,147 +422,238 @@
             </div>
         </div>
 
+        <!-- PRICING CONTROLLER (SPLIT WITH PREMIUM MODULES AND RECALCULATED HIGHLIGHTS) -->
         <div id="page-pricing" class="page-view">
-            <section class="bg-slate-950 text-white py-16 px-6 text-center">
-                <h2 class="text-3xl font-black tracking-tight">
-                    <span class="text-en">Predictable Fixed Retainers</span>
-                    <span class="text-gu">ફિક્સ મંથલી પ્રીમિયમ પ્લાન કિંમત</span>
-                </h2>
-                <p class="text-xs text-slate-400 max-w-md mx-auto mt-2.5">
-                    <span class="text-en">Zero hidden transactional surprises. Secure corporate infrastructure subscription layers.</span>
-                    <span class="text-gu">કોઈપણ છુપો ચાર્જ નથી. સિક્યોર કોર્પોરેટ ઇન્ફ્રાસ્ટ્રક્ચર સબસ્ક્રિપ્શન મેટ્રિક્સ.</span>
-                </p>
+            <section class="bg-slate-950 text-white py-12 px-6 text-center">
+                <h2 class="text-3xl font-black tracking-tight">Predictable Fixed Retainers</h2>
+                <p class="text-xs text-slate-400 mt-2">Flat transparent structural rates. Designed cleanly for strategic enterprise transparency.</p>
             </section>
 
-            <section class="py-24 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div id="card-sentinel" onclick="activatePlanFlow('Asset Sentinel Plan ($100/mo)', 'sentinel')" class="premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between shadow-sm cursor-pointer border-t-4 border-t-slate-800">
-                    <div>
-                        <h4 class="font-black text-slate-950 text-base uppercase tracking-wider">Asset Sentinel</h4>
-                        <div class="text-3xl font-black text-slate-900 my-4.5">$100<span class="text-xs text-gray-400 font-normal"> / <span class="text-en">month</span><span class="text-gu">મહિનો</span></span></div>
-                        <p class="text-xs text-gray-500 mb-8 font-medium leading-relaxed">
-                            <span class="text-en">Designed primarily for empty plots, land holdings, and premium bungalows requiring safety checking operations.</span>
-                            <span class="text-gu">વતનમાં આવેલા ખાલી પ્લોટ, જમીન અથવા બંધ પડેલા બંગલાઓની સુરક્ષા અને મોનિટરિંગ માટેનો સિક્યોર પ્લાન.</span>
-                        </p>
-                    </div>
-                    <span class="text-xs font-bold text-amber-600 block text-right"><span class="text-en">Select Plan <i class="fa-solid fa-arrow-down ml-1"></i></span><span class="text-gu">પ્લાન પસંદ કરો <i class="fa-solid fa-arrow-down ml-1"></i></span></span>
+            <!-- SECTION A: PROPERTY CARE (CALCULATED AT FLAT MULTIPLES OF $80) -->
+            <section class="max-w-6xl mx-auto pt-16 px-6">
+                <div class="border-b border-gray-200 pb-4 mb-10">
+                    <h3 class="text-xl font-black text-slate-900 flex items-center gap-2"><i class="fa-solid fa-building-shield text-slate-700"></i> SECTION A: Property Care Sentinel Retainers</h3>
+                    <p class="text-xs text-gray-500 font-medium">100% Medical & Vehicle transit free. Standalone property monitoring structures.</p>
                 </div>
-                <div id="card-concierge" onclick="activatePlanFlow('Full Concierge Plan ($200/mo)', 'concierge')" class="premium-card bg-white border-2 border-amber-500 p-8 rounded-3xl flex flex-col justify-between shadow-xl relative transform scale-100 md:scale-105 cursor-pointer">
-                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 font-black text-[9px] uppercase px-4 py-1.5 rounded-md tracking-widest shadow-md">
-                        <span class="text-en">Popular</span><span class="text-gu">લોકપ્રિય</span>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
+                    <!-- SILVER -->
+                    <div class="flex flex-col justify-between">
+                        <div id="card-prop-silver" onclick="activatePlanFlow('Property Silver ($80/mo)', 'prop-silver')" class="premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 border-t-slate-400">
+                            <div>
+                                <h4 class="font-black text-slate-400 text-[10px] uppercase tracking-widest">Property Layer • 1 Month</h4>
+                                <h3 class="font-black text-slate-950 text-xl mt-1 uppercase tracking-wider">Silver Plan</h3>
+                                <div class="text-4xl font-black text-slate-900 my-4.5">$80<span class="text-xs text-gray-400 font-normal"> / month</span></div>
+                                <p class="text-xs text-gray-500 font-medium leading-relaxed">Vacant bungalow structural audits, monthly 4K surveillance logs, moisture leaks tracing, and maintenance vendor control parameters.</p>
+                            </div>
+                            <span class="text-xs font-bold text-amber-600 mt-6 block text-right">Select Framework <i class="fa-solid fa-arrow-down ml-1"></i></span>
+                        </div>
+                        <div class="bg-slate-100/80 rounded-xl px-4 py-2.5 mt-3 text-center text-[10px] font-bold text-slate-500 tracking-wide">Month-to-Month Standard Commits</div>
                     </div>
-                    <div>
-                        <h4 class="font-black text-slate-950 text-base uppercase tracking-wider">Full Concierge Plan</h4>
-                        <div class="text-3xl font-black text-amber-600 my-4.5">$200<span class="text-xs text-gray-400 font-normal"> / <span class="text-en">month</span><span class="text-gu">મહિનો</span></span></div>
-                        <p class="text-xs text-gray-500 mb-8 font-medium leading-relaxed">
-                            <span class="text-en">Complete standard package combining full structural walkthrough checks along with medical accompaniment.</span>
-                            <span class="text-gu">પ્રોપર્ટી મોનિટરિંગ, ૨૪ કલાક મેડિકલ હોસ્પિટલ એસ્કોર્ટ, બેંક વહીવટ અને કરિયાણા વ્યવસ્થા બધું જ એકસાથે શામેલ છે.</span>
-                        </p>
+
+                    <!-- GOLD -->
+                    <div class="flex flex-col justify-between">
+                        <div id="card-prop-gold" onclick="activatePlanFlow('Property Gold ($480 / 6 months)', 'prop-gold')" class="premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 border-t-amber-500">
+                            <div>
+                                <h4 class="font-black text-amber-600 text-[10px] uppercase tracking-widest">Property Layer • 6 Months</h4>
+                                <h3 class="font-black text-slate-950 text-xl mt-1 uppercase tracking-wider">Gold Plan</h3>
+                                <div class="text-4xl font-black text-slate-900 my-4.5">$480<span class="text-xs text-gray-400 font-normal"> / 6 months</span></div>
+                                <p class="text-xs text-gray-500 font-medium leading-relaxed">Extended structural diagnostics validation packages, municipal tax hand deliveries checking updates, and utility automation workflows.</p>
+                            </div>
+                            <span class="text-xs font-bold text-amber-600 mt-6 block text-right">Select Framework <i class="fa-solid fa-arrow-down ml-1"></i></span>
+                        </div>
+                        <!-- EYE-CATCHING SLATE/AMBER DYNAMIC DESIGN BANNER -->
+                        <div class="bg-gradient-to-r from-amber-500/10 to-amber-600/5 border border-amber-500/30 rounded-2xl p-3.5 mt-3 text-left shadow-sm flex items-center justify-between gap-3 group hover:border-amber-500 transition-colors">
+                            <div class="space-y-0.5">
+                                <span class="text-[11px] font-black text-amber-700 uppercase tracking-wider flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping"></span>10% SPECIAL SAVINGS
+                                </span>
+                                <p class="text-[10px] text-slate-500 font-bold leading-normal">Save <strong class="text-slate-900 font-black">$48.00 instantly</strong>. Platform auto-deducts balance down to <strong class="text-amber-600 font-black">$432</strong> at secure checkout link.</p>
+                            </div>
+                            <div class="bg-amber-500 text-slate-950 font-black text-[10px] px-2.5 py-1.5 rounded-lg shrink-0 tracking-tighter">-$48</div>
+                        </div>
                     </div>
-                    <span class="text-xs font-bold text-amber-600 block text-right"><span class="text-en">Select Plan <i class="fa-solid fa-arrow-down ml-1"></i></span><span class="text-gu">પ્લાન પસંદ કરો <i class="fa-solid fa-arrow-down ml-1"></i></span></span>
-                </div>
-                <div id="card-kinship" onclick="activatePlanFlow('Kinship Care Plan ($120/mo)', 'kinship')" class="premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between shadow-sm cursor-pointer border-t-4 border-t-slate-800">
-                    <div>
-                        <h4 class="font-black text-slate-950 text-base uppercase tracking-wider">Kinship Care Plan</h4>
-                        <div class="text-3xl font-black text-slate-950 my-4.5">$120<span class="text-xs text-gray-400 font-normal"> / <span class="text-en">month</span><span class="text-gu">મહિનો</span></span></div>
-                        <p class="text-xs text-gray-500 mb-8 font-medium leading-relaxed">
-                            <span class="text-en">Dedicated exclusively to parental medical visits, banking paperwork clearance, and grocery tracking infrastructure.</span>
-                            <span class="text-gu">માતા-પિતાની સેવા, હોસ્પિટલ ફેમિલી ગાઈડ, બેંક પાસબુક એન્ટ્રી અને કરિયાણા વ્યવસ્થા માટે ખાસ લોકપ્રિય પેકેજ.</span>
-                        </p>
+
+                    <!-- PLATINUM -->
+                    <div class="flex flex-col justify-between">
+                        <div id="card-prop-platinum" onclick="activatePlanFlow('Property Platinum ($960 / 12 months)', 'prop-platinum')" class="premium-card bg-white p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 border-t-slate-900">
+                            <div>
+                                <h4 class="font-black text-slate-900 text-[10px] uppercase tracking-widest">Property Layer • 12 Months</h4>
+                                <h3 class="font-black text-slate-950 text-xl mt-1 uppercase tracking-wider">Platinum Plan</h3>
+                                <div class="text-4xl font-black text-slate-900 my-4.5">$960<span class="text-xs text-gray-400 font-normal"> / 12 months</span></div>
+                                <p class="text-xs text-gray-500 font-medium leading-relaxed">Full legal property verification mapping layers, perimeter boundaries encroachment safety check, and structural quick recovery setups.</p>
+                            </div>
+                            <span class="text-xs font-bold text-slate-950 mt-6 block text-right font-black">Select Framework <i class="fa-solid fa-arrow-down ml-1"></i></span>
+                        </div>
+                        <!-- EYE-CATCHING PREMIUM CHARCOAL SAVINGS CONTAINER -->
+                        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 mt-3 text-left shadow-md flex items-center justify-between gap-3 relative overflow-hidden">
+                            <div class="absolute -right-4 -bottom-4 text-slate-900 font-black text-5xl select-none pointer-events-none tracking-tighter">25%</div>
+                            <div class="space-y-0.5 relative z-10">
+                                <span class="text-[11px] font-black text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+                                    <i class="fa-solid fa-bolt text-xs animate-bounce"></i>25% ANNUAL VIP CUT
+                                </span>
+                                <p class="text-[10px] text-slate-400 font-medium leading-normal">Save a massive <strong class="text-white font-black">$240.00 right now</strong>. Total framework drops down from $960 directly to <strong class="text-amber-400 font-black">$720</strong> inside database registry.</p>
+                            </div>
+                            <div class="bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 font-black text-[10px] px-2.5 py-1.5 rounded-lg shrink-0 z-10 shadow-sm">-$240</div>
+                        </div>
                     </div>
-                    <span class="text-xs font-bold text-amber-600 block text-right"><span class="text-en">Select Plan <i class="fa-solid fa-arrow-down ml-1"></i></span><span class="text-gu">પ્લાન પસંદ કરો <i class="fa-solid fa-arrow-down ml-1"></i></span></span>
                 </div>
             </section>
 
+            <!-- SECTION B: PARENTAL SUPPORT (CALCULATED AT FLAT MULTIPLES OF $149) -->
+            <section class="max-w-6xl mx-auto pt-24 pb-24 px-6">
+                <div class="border-b border-gray-200 pb-4 mb-10">
+                    <h3 class="text-xl font-black text-slate-900 flex items-center gap-2"><i class="fa-solid fa-heart-pulse text-blue-600"></i> SECTION B: Parental & Family Support Retainers</h3>
+                    <p class="text-xs text-gray-500 font-medium">Dedicated strictly to elder care monitoring, banking paperwork liaison, grocery management and live updates.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
+                    <!-- SILVER PARENT -->
+                    <div class="flex flex-col justify-between">
+                        <div id="card-parent-silver" onclick="activatePlanFlow('Parental Silver ($149/mo)', 'parent-silver')" class="premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 border-t-slate-400 relative">
+                            <div>
+                                <h4 class="font-black text-slate-400 text-[10px] uppercase tracking-widest">Parental Layer • 1 Month</h4>
+                                <h3 class="font-black text-slate-950 text-xl mt-1 uppercase tracking-wider">Silver Plan</h3>
+                                <div class="text-4xl font-black text-slate-900 my-4.5">$149<span class="text-xs text-gray-400 font-normal"> / month</span></div>
+                                <p class="text-xs text-gray-500 font-medium leading-relaxed">Cooperative bank ledger updates, physical passbook entries tracking, utility pipelines management, and kitchen ration stock balances checkups.</p>
+                            </div>
+                            <span class="text-xs font-bold text-blue-600 mt-6 block text-right">Select Framework <i class="fa-solid fa-arrow-down ml-1"></i></span>
+                        </div>
+                        <div class="bg-slate-100/80 rounded-xl px-4 py-2.5 mt-3 text-center text-[10px] font-bold text-slate-500 tracking-wide">Flexible Monthly Operational Layer</div>
+                    </div>
+
+                    <!-- GOLD PARENT -->
+                    <div class="flex flex-col justify-between">
+                        <div id="card-parent-gold" onclick="activatePlanFlow('Parental Gold ($894 / 6 months)', 'parent-gold')" class="premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 border-t-blue-500">
+                            <div>
+                                <h4 class="font-black text-blue-600 text-[10px] uppercase tracking-widest">Parental Layer • 6 Months</h4>
+                                <h3 class="font-black text-slate-950 text-xl mt-1 uppercase tracking-wider">Gold Plan</h3>
+                                <div class="text-4xl font-black text-slate-900 my-4.5">$894<span class="text-xs text-gray-400 font-normal"> / 6 months</span></div>
+                                <p class="text-xs text-gray-500 font-medium leading-relaxed">Advanced kitchen asset home delivery protocols, internet infrastructure setup updates, tablet configurations, and medical drug refills monitoring.</p>
+                            </div>
+                            <span class="text-xs font-bold text-blue-600 mt-6 block text-right">Select Framework <i class="fa-solid fa-arrow-down ml-1"></i></span>
+                        </div>
+                        <!-- EYE-CATCHING HIGH-VALUE AMBER EXTENSION NODES FOR SECT B -->
+                        <div class="bg-gradient-to-r from-amber-500/10 to-amber-600/5 border border-amber-400/30 rounded-2xl p-3.5 mt-3 text-left shadow-sm flex items-center justify-between gap-3 group hover:border-amber-500 transition-all">
+                            <div class="space-y-0.5">
+                                <span class="text-[11px] font-black text-amber-800 uppercase tracking-wider flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle-nodes animate-spin text-xs" style="animation-duration: 3s;"></i>10% SEMI-ANNUAL CUT
+                                </span>
+                                <p class="text-[10px] text-slate-500 font-bold leading-normal">Save exactly <strong class="text-slate-900 font-black">$89.40 out-of-pocket</strong>. The system automatically processes the block value down to <strong class="text-amber-600 font-black">$804</strong>.</p>
+                            </div>
+                            <div class="bg-amber-500 text-slate-950 font-black text-[10px] px-2.5 py-1.5 rounded-lg shrink-0 shadow-sm">-$89</div>
+                        </div>
+                    </div>
+
+                    <!-- PLATINUM PARENT -->
+                    <div class="flex flex-col justify-between">
+                        <div id="card-parent-platinum" onclick="activatePlanFlow('Parental Platinum ($1788 / 12 months)', 'parent-platinum')" class="premium-card bg-white p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-2 best-value-card relative shadow-md">
+                            <div>
+                                <h4 class="font-black text-blue-600 text-[10px] uppercase tracking-widest">Parental Layer • 12 Months</h4>
+                                <h3 class="font-black text-slate-950 text-xl mt-1 uppercase tracking-wider">Platinum Plan</h3>
+                                <div class="text-4xl font-black text-blue-600 my-4.5">$1788<span class="text-xs text-gray-400 font-normal"> / 12 months</span></div>
+                                <p class="text-xs text-gray-500 font-medium leading-relaxed">Full continuous year framework protection layering covering bilingual live status data sync pipelines directly into your target global WhatsApp chat link.</p>
+                            </div>
+                            <span class="text-xs font-bold text-blue-600 mt-6 block text-right font-black">Secure 12-Month Access <i class="fa-solid fa-arrow-down ml-1"></i></span>
+                        </div>
+                        <!-- COGNITIVE DOMINANCE COBALT BLUE ANNUAL DEPLOYMENT BOX -->
+                        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl p-3.5 mt-3 text-left shadow-lg flex items-center justify-between gap-3 border border-blue-400/20 relative overflow-hidden group">
+                            <div class="absolute -right-2 -bottom-2 text-blue-700/30 font-black text-5xl select-none pointer-events-none"><i class="fa-solid fa-star"></i></div>
+                            <div class="space-y-0.5 relative z-10">
+                                <span class="text-[11px] font-black text-amber-400 uppercase tracking-wider flex items-center gap-1.5 animate-pulse">
+                                    <i class="fa-solid fa-star-half-stroke"></i>MAX DIASPORA DISCOUNT (25% OFF)
+                                </span>
+                                <p class="text-[10px] text-blue-100 font-semibold leading-normal">Save a massive <strong class="text-white font-black">$447.00 block value</strong>. Full 12-month lock down sets the final server footprint to <strong class="text-amber-400 font-black">$1341 total</strong>.</p>
+                            </div>
+                            <div class="bg-white text-blue-700 font-black text-[11px] px-2.5 py-1.5 rounded-lg shrink-0 z-10 shadow-md transform group-hover:scale-105 transition-transform">-$447</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INTERACTIVE FORM INTERFACE CONTROL -->
             <section id="dynamic-services-panel" class="max-w-4xl mx-auto px-6 pb-24 hidden">
                 <div class="bg-white rounded-[32px] shadow-2xl border border-gray-100 p-8 sm:p-12 space-y-10 slide-down-panel">
-                    
+                   
                     <div id="interactive-plan-header" class="bg-gradient-to-r from-slate-900 to-amber-950 text-white rounded-2xl p-5 sm:p-7 shadow-xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border border-amber-400/10">
                         <div class="space-y-1.5">
                             <span class="text-[10px] text-amber-400 font-black tracking-widest uppercase block flex items-center gap-1.5"><i class="fa-solid fa-fingerprint animate-pulse"></i> LIVE REGISTRY PIPELINE</span>
                             <h3 id="target-plan-title" class="text-xl sm:text-2xl font-black text-white tracking-tight"></h3>
                         </div>
                         <div class="bg-amber-500 text-slate-950 font-black text-xs px-5 py-3.5 rounded-xl shadow-md border border-white/10 shrink-0">
-                            <span class="text-en">ACTIVE RETENTION ENGAGED</span>
-                            <span class="text-gu">આ  પ્લાન ડાયરેક્ટ એક્ટિવ થશે</span>
+                            REGISTRATION LAYERS ENGAGED
                         </div>
                     </div>
 
                     <div class="bg-slate-50 border border-gray-100 p-5 sm:p-8 rounded-2xl">
-                        <h4 class="text-xs font-black uppercase text-slate-500 tracking-wider mb-5"><i class="fa-solid fa-list-check text-amber-500 mr-1.5"></i> <span class="text-en">Vatan Care Active Deliverables Matrix</span><span class="text-gu">વતન કેર સક્રિય ડિલિવરેબલ્સ મેટ્રિક્સ</span></h4>
-                        
-                        <div id="services-sentinel" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-slate-700">
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Monthly 4K Video Bungalow Walkthrough Logs</span><span class="text-gu">૧. મારું ઘર પ્રોપર્ટી મોનિટરિંગ અને ઓડિટ</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Boundary Line Encroachment Safety Check</span><span class="text-gu">૫. ઘર રીપેરીંગ અને વેન્ડર પ્રોજેક્ટ કંટ્રોલ</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Visnagar Nagarpalika Tax Hand-Delivery Clearance</span><span class="text-gu">૮. ઘરવેરો, લાઈટ બિલ અને ગેસ બિલ ઓટોમેશન</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Structural Leak & Moisture Audit Checks</span><span class="text-gu">૩. બેંક વહીવટ વગેરે સરકારી પેપરવર્ક લિંકિંગ</span></div>
+                        <h4 class="text-xs font-black uppercase text-slate-500 tracking-wider mb-5"><i class="fa-solid fa-list-check text-amber-500 mr-1.5"></i> Vatan Care Active Deliverables Matrix</h4>
+                       
+                        <!-- CHIP HOOK ARRAYS -->
+                        <div id="services-prop-silver" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-slate-700">
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Monthly 4K Video Property Walkthrough Logs</div>
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Structural Leakage Moisture Testing Metrics</div>
+                        </div>
+                        <div id="services-prop-gold" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-slate-700">
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Monthly 4K Video Property Walkthrough Logs</div>
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Nagarpalika Compliance Tax Clearances Management</div>
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Anti-Fraud Contractor Renovations Oversight Control</div>
+                        </div>
+                        <div id="services-prop-platinum" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-slate-700">
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Complete Annual 4K Surveillance Registry Mapping</div>
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Boundary Line Encroachment Safety Inspections</div>
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Rapid Centers Structural Damage Recovery Node</div>
                         </div>
 
-                        <div id="services-concierge" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-slate-700">
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Complete "Maru Ghar" 4K Video Surveillance Logs</span><span class="text-gu">૧. મારું ઘર પ્રોપર્ટી સુરક્ષા અને ઓડિટ</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">"Mata-Pita" Specialty Medical Escort Across Gujarat</span><span class="text-gu">૨. માતા-પિતા હોસ્પિટલ મેડિકલ ગાઈડ સેવા</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Cooperative Bank Passbook Updates & Liaison Steps</span><span class="text-gu">૩. બેંક વહીવટ અને સરકારી ડોક્યુમેન્ટ કામકાજ</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">24/7 Kansa Chokdi Rapid Emergency Response Node</span><span class="text-gu">૪. ૨૪/૭ તાત્કાલિક ઇમરજન્સી ક્વિક સેવા</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Anti-Fraud Material Cost Renovation Management</span><span class="text-gu">૫. ઘર રીપેરીંગ, કલર અને વેન્ડર પ્રોજેક્ટ કંટ્રોલ</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Utility bill clearance and grocery management</span><span class="text-gu">૯. કરિયાણું, અનાજ અને દવા હોમ ડિલિવરી</span></div>
+                        <div id="services-parent-silver" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-slate-700">
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Cooperative Bank Passbooks Ledger Verification Logs</div>
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Utility payment pipelines clearing</div>
                         </div>
-
-                        <div id="services-kinship" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-slate-700">
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Dedicated Specialty Medical Escort Runs</span><span class="text-gu">૨. માતા-પિતા હોસ્પિટલ મેડિકલ ગાઈડ સેવા</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Local Cooperative Bank & Document Verification Actions</span><span class="text-gu">૩. બેંક વહીવટ અને સરકારી ડોક્યુમેન્ટ કામકાજ</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Monthly Grocery, Ration & Medication Home Deliveries</span><span class="text-gu">૯. કરિયાણું, અનાજ અને દવા હોમ ડિલિવરી મેનેજમેન્ટ</span></div>
-                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span class="text-en">Bilingual Live WhatsApp Status Updates Feeds Pipeline</span><span class="text-gu">૬. ડિજિટલ સાક્ષરતા અને વિડીયો કોલ સેટઅપ સપોર્ટ</span></div>
+                        <div id="services-parent-gold" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-slate-700">
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Kitchen Counter Asset Grocery Ration Deliveries</div>
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Single-Tap Video Communication Network Setup</div>
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Automated Medicine Critical Refill Checks</div>
+                        </div>
+                        <div id="services-parent-platinum" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-slate-700">
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> All Core Section B Administration Parameters Unlocked</div>
+                            <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Bilingual Live WhatsApp Status Update Feeds Pipeline</div>
                         </div>
                     </div>
 
+                    <!-- USER INPUT MODULE -->
                     <form onsubmit="handleAdvancedDetailsSubmit(event)" id="vatan-core-form" class="space-y-6 border-t border-gray-100 pt-8">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-xs font-black uppercase tracking-wider text-gray-700 mb-2">
-                                    <span class="text-en">1. Your Full Name (NRI Child)</span><span class="text-gu">૧. તમારું પૂરું નામ (NRI સંતાન)</span>
-                                </label>
+                                <label class="block text-xs font-black uppercase tracking-wider text-gray-700 mb-2">1. Your Full Name (NRI Child)</label>
                                 <input type="text" id="form-name" required minlength="3" placeholder="Rajesh Patel" class="w-full px-4 py-3.5 border border-gray-300 rounded-xl text-sm bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-slate-900 font-medium transition-all">
                             </div>
                             <div>
-                                <label class="block text-xs font-black uppercase tracking-wider text-gray-700 mb-2">
-                                    <span class="text-en">2. Your Profession Abroad</span><span class="text-gu">૨. વિદેશમાં તમારો વ્યવસાય/પ્રોફેશન</span>
-                                </label>
+                                <label class="block text-xs font-black uppercase tracking-wider text-gray-700 mb-2">2. Your Profession Abroad</label>
                                 <input type="text" id="form-profession" required placeholder="Software Engineer / Business Owner" class="w-full px-4 py-3.5 border border-gray-300 rounded-xl text-sm bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-slate-900 font-medium">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-xs font-black uppercase tracking-wider text-gray-700 mb-2">
-                                    <span class="text-en">3. Abroad Phone Number (WhatsApp)</span><span class="text-gu">૩. વિદેશનો ફોન નંબર (વોટ્સએપ અપડેટ માટે)</span>
-                                </label>
-                                <input type="tel" id="form-intl-phone" required placeholder="+61 450 920 249 / +91 85116 20300" class="w-full px-4 py-3.5 border border-gray-300 rounded-xl text-sm bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-slate-900 font-medium transition-all">
+                                <label class="block text-xs font-black uppercase tracking-wider text-gray-700 mb-2">3. Abroad Phone Number (WhatsApp)</label>
+                                <input type="tel" id="form-intl-phone" required placeholder="+61 450 920 249" class="w-full px-4 py-3.5 border border-gray-300 rounded-xl text-sm bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-slate-900 font-medium transition-all">
                                 <span id="phone-error-node" class="text-[11px] font-bold text-red-600 hidden mt-1.5 block"></span>
                             </div>
                             <div>
-                                <label class="block text-xs font-black uppercase tracking-wider text-gray-700 mb-2">
-                                    <span class="text-en">4. Visnagar / Mehsana Home Address</span><span class="text-gu">૪. વતનનું પ્રોપર્ટી અથવા ઘરનું સરનામું (Address)</span>
-                                </label>
+                                <label class="block text-xs font-black uppercase tracking-wider text-gray-700 mb-2">4. Visnagar / Mehsana Home Address</label>
                                 <input type="text" id="form-address" required placeholder="VIP Society, Kansa Road, Visnagar" class="w-full px-4 py-3.5 border border-gray-300 rounded-xl text-sm bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-slate-900 font-medium">
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-black uppercase tracking-wider text-gray-700 mb-2">
-                                <span class="text-en">5. Specify Health Issues or Work Needed for Elderly Persons at Home</span>
-                                <span class="text-gu">૫. વતનમાં વડીલોને પડતી શારીરિક, મેડિકલ તકલીફો અથવા જરૂરી કામની વિગત લખો (Work Details)</span>
-                            </label>
-                            <textarea id="form-work" rows="3" required placeholder="Mother has walking problems, needs monthly medical escort to hospital..." class="w-full px-4 py-3.5 border border-gray-300 rounded-xl text-sm bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-slate-900 font-medium"></textarea>
+                            <label class="block text-xs font-black uppercase tracking-wider text-gray-700 mb-2">5. Specify Special Action Requirements or Work Details Needed</label>
+                            <textarea id="form-work" rows="3" required placeholder="Describe details regarding vacant bungalow checks or local paperwork tracking required..." class="w-full px-4 py-3.5 border border-gray-300 rounded-xl text-sm bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-slate-900 font-medium"></textarea>
                         </div>
 
                         <button type="submit" id="form-submit-btn" class="w-full bg-amber-500 hover:bg-amber-600 disabled:bg-slate-300 disabled:text-slate-500 disabled:cursor-not-allowed text-slate-950 font-black text-xs uppercase tracking-widest py-4.5 rounded-xl shadow-xl transition-all transform hover:-translate-y-0.5 block text-center animate-btn">
-                            <span id="btn-default-text" class="flex items-center justify-center gap-2">
-                                <span class="text-en">Submit Setup Profile Framework <i class="fa-solid fa-circle-check"></i></span>
-                                <span class="text-gu">આ વિગતો અને સામેલ સેવાઓ સાથે પ્લાન સબમિટ કરો <i class="fa-solid fa-circle-check"></i></span>
-                            </span>
+                            <span id="btn-default-text">Submit Setup Profile Framework <i class="fa-solid fa-circle-check"></i></span>
                             <span id="btn-loading-text" class="hidden flex items-center justify-center gap-2">
                                 <i class="fa-solid fa-spinner text-sm loading-spin-icon"></i>
-                                <span class="text-en">Processing Security Handshake...</span>
-                                <span class="text-gu">સિક્યોર ડેટા ટ્રાન્સમિશન ચાલુ છે...</span>
+                                Processing Security Handshake...
                             </span>
                         </button>
                     </form>
@@ -545,14 +661,13 @@
             </section>
         </div>
 
+        <!-- SUCCESS VIEW SCREEN -->
         <div id="page-success" class="page-view">
             <section class="max-w-xl mx-auto my-20 p-10 bg-white border border-gray-100 rounded-3xl shadow-2xl text-center space-y-5">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-600 flex items-center justify-center rounded-full text-2xl mx-auto"><i class="fa-solid fa-circle-check"></i></div>
-                <h2 class="text-xl font-black text-slate-950"><span class="text-en">Activated Successfully</span><span class="text-gu">સફળતાપૂર્વક સબમિટ થયું</span></h2>
+                <h2 class="text-xl font-black text-slate-950">Activated Successfully</h2>
                 <div id="success-dynamic-text-node" class="text-xs sm:text-sm text-gray-600 leading-relaxed"></div>
-                <button onclick="navigateTo('home')" class="w-full bg-slate-950 text-white text-xs font-black py-4 rounded-xl uppercase tracking-wider animate-btn">
-                    <span class="text-en">Back to Home Dashboard</span><span class="text-gu">મુખ્ય પેજ પર પાછા જાઓ</span>
-                </button>
+                <button onclick="navigateTo('home')" class="w-full bg-slate-950 text-white text-xs font-black py-4 rounded-xl uppercase tracking-wider animate-btn">Back to Home Dashboard</button>
             </section>
         </div>
 
@@ -566,14 +681,11 @@
     <script>
         let currentSelectedPlan = "";
 
-        /**
-         * Localization Engine Manager
-         */
         function setLanguage(langCode) {
             const viewport = document.getElementById('root-viewport');
             const btnEn = document.getElementById('btn-lang-en');
             const btnGu = document.getElementById('btn-lang-gu');
-            
+           
             if (langCode === 'gu') {
                 viewport.classList.remove('lang-en');
                 viewport.classList.add('lang-gu');
@@ -587,9 +699,6 @@
             }
         }
 
-        /**
-         * Top 10% Enterprise State Router Engine with State Synchronization 
-         */
         function navigateTo(pageId) {
             const navButtons = document.querySelectorAll('header nav button');
             navButtons.forEach(btn => btn.className = "hover:text-amber-600 transition-colors");
@@ -599,51 +708,57 @@
                 view.classList.remove('active');
                 view.style.display = "none";
             });
-            
+           
             const target = document.getElementById('page-' + pageId) || document.getElementById('page-home');
             target.style.display = "block";
-            
+           
             setTimeout(() => {
                 target.classList.add('active');
             }, 10);
-            
+           
             const currentActiveNode = document.getElementById('nav-' + pageId);
             if(currentActiveNode) {
                 currentActiveNode.className = "text-amber-600 transition-colors font-extrabold";
             }
-            
+           
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        /**
-         * Plan Selected Interlocking Core Sub-routing Operations
-         */
         function activatePlanFlow(planName, typeKey) {
             currentSelectedPlan = planName;
             document.getElementById('target-plan-title').innerHTML = `<i class="fa-solid fa-box-open text-amber-500 mr-2"></i> ${planName}`;
-            
-            document.getElementById('services-sentinel').classList.add('hidden');
-            document.getElementById('services-concierge').classList.add('hidden');
-            document.getElementById('services-kinship').classList.add('hidden');
+           
+            const arrays = ['prop-silver', 'prop-gold', 'prop-platinum', 'parent-silver', 'parent-gold', 'parent-platinum'];
+            arrays.forEach(k => document.getElementById('services-' + k).classList.add('hidden'));
+           
             document.getElementById('services-' + typeKey).classList.remove('hidden');
-            
             document.getElementById('dynamic-services-panel').classList.remove('hidden');
-            
-            document.getElementById('card-sentinel').className = "premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between shadow-sm cursor-pointer border-t-4 border-t-slate-800";
-            document.getElementById('card-concierge').className = "premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between shadow-sm cursor-pointer border-t-4 border-t-slate-800";
-            document.getElementById('card-kinship').className = "premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between shadow-sm cursor-pointer border-t-4 border-t-slate-800";
-            
-            document.getElementById('card-' + typeKey).className = "premium-card bg-white border-2 border-amber-500 p-8 rounded-3xl flex flex-col justify-between shadow-xl relative transform scale-100 md:scale-105 cursor-pointer";
-            
+           
+            arrays.forEach(k => {
+                const targetCard = document.getElementById('card-' + k);
+                if(targetCard) {
+                    if(k === 'parent-platinum') {
+                        targetCard.className = "premium-card bg-white p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-2 best-value-card relative shadow-md";
+                    } else if(k.includes('prop')) {
+                        targetCard.className = "premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 " + (k.includes('silver') ? 'border-t-slate-400' : k.includes('gold') ? 'border-t-amber-500' : 'border-t-slate-900');
+                    } else {
+                        targetCard.className = "premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 " + (k.includes('silver') ? 'border-t-slate-400' : 'border-t-blue-500');
+                    }
+                }
+            });
+           
+            if(typeKey === 'parent-platinum') {
+                document.getElementById('card-parent-platinum').className = "premium-card bg-white p-8 rounded-3xl flex flex-col justify-between cursor-pointer border-4 border-blue-600 best-value-card relative transform scale-105 shadow-2xl bg-gradient-to-b from-white to-blue-50/20";
+            } else {
+                document.getElementById('card-' + typeKey).className = "premium-card bg-white border-2 border-amber-500 p-8 rounded-3xl flex flex-col justify-between shadow-xl relative transform scale-105 cursor-pointer";
+            }
+           
             document.getElementById('dynamic-services-panel').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
-        /**
-         * CRITICAL UPGRADE: Advanced Multi-Field Fetch Pipeline with Intelligent Number Parsers
-         */
         function handleAdvancedDetailsSubmit(event) {
             event.preventDefault();
-            
+           
             const nameField = document.getElementById('form-name');
             const phoneField = document.getElementById('form-intl-phone');
             const errorNode = document.getElementById('phone-error-node');
@@ -651,52 +766,41 @@
             const defaultText = document.getElementById('btn-default-text');
             const loadingText = document.getElementById('btn-loading-text');
 
-            // Hard Reset UI Error States
             phoneField.classList.remove('border-red-500', 'ring-2', 'ring-red-200');
             errorNode.classList.add('hidden');
 
-            // 1. TOP 1% INTELLIGENT NUMBER PARSER ENGINE (FIXES SPACES / TWO WORDS EFFECT)
-            // આ કન્વર્ઝન મોડ્યુલ લાઈવ સ્પેસ અને સ્પેશિયલ કેરેક્ટર્સને હટાવીને માત્ર આંકડા જ વેલિડેટ કરશે!
-            const cleanedPhoneDigits = phoneField.value.replace(/[^0-9]/g, ''); 
-            
+            const cleanedPhoneDigits = phoneField.value.replace(/[^0-9]/g, '');
+           
             if (cleanedPhoneDigits.length < 7 || cleanedPhoneDigits.length > 15) {
                 phoneField.classList.add('border-red-500', 'ring-2', 'ring-red-200');
-                errorNode.innerText = "❌ Invalid Phone! Please write a valid phone number (7 to 15 digits). Spaces or multiple words are allowed but must contain digits.";
+                errorNode.innerText = "❌ Invalid Phone! Please write a valid digit framework.";
                 errorNode.classList.remove('hidden');
                 phoneField.focus();
                 return;
             }
 
-            // 2. PARSE BOUND DYNAMIC SCHEMA OBJECT
             const formData = {
                 nriName: nameField.value,
                 profession: document.getElementById('form-profession').value,
-                abroadPhone: phoneField.value, // Keep raw value formatted with spaces for server visibility
+                abroadPhone: phoneField.value,
                 planSelected: currentSelectedPlan,
                 vatanAddress: document.getElementById('form-address').value,
                 elderScopeIssues: document.getElementById('form-work').value
             };
 
-            // 3. TRIGGER ANIMATED LOADING STATE PIPELINE
             submitBtn.disabled = true;
             defaultText.classList.add('hidden');
             loadingText.classList.remove('hidden');
 
-            // ACTIVE STABLE TUNNEL ROUTER GATEWAY
             const tunnelUrl = 'https://vatancare-backend-api-tik0.onrender.com/api/bookings/activate';              
-            // 4. INITIATE SECURE ASYNCHRONOUS NETWORK HANDSHAKE OPERATIONS
+           
             fetch(tunnelUrl, {
                 method: 'POST',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'Bypass-Tunnel-Reminder': 'true' 
-                },
+                headers: { 'Content-Type': 'application/json', 'Bypass-Tunnel-Reminder': 'true' },
                 body: JSON.stringify(formData)
             })
             .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network payload delivery failed');
-                }
+                if (!response.ok) throw new Error('Network core drop');
                 return response.json();
             })
             .then(data => {
@@ -704,26 +808,19 @@
                     const node = document.getElementById('success-dynamic-text-node');
                     node.innerHTML = `
                         <div class="text-left bg-slate-50 p-6 rounded-2xl text-xs space-y-2 my-3 border border-gray-100">
-                            <p class="font-bold border-b border-gray-200 pb-1.5 text-slate-700 uppercase tracking-wider"><i class="fa-solid fa-id-card mr-1.5 text-amber-500"></i> Real-time Synchronized Data:</p>
                             <p><strong>NRI Name:</strong> ${formData.nriName}</p>
-                            <p><strong>Abroad Phone Line:</strong> ${formData.abroadPhone}</p>
                             <p><strong>Selected Framework:</strong> ${formData.planSelected}</p>
                             <p><strong>Target Address Location:</strong> ${formData.vatanAddress}</p>
                         </div>
-                        <p class="text-xs text-slate-700 mt-2 font-medium">
-                            <span class="text-en">All 5 inputs have been successfully written into your cloud backend database footprint safely.</span>
-                            <span class="text-gu">તમારો પાંચેય ફિલ્ડનો મોડ્યુલર ડેટા વિસનગર ક્લાઉડ સર્વર (રેન્ડર) માં સફળતાપૂર્વક લોક થઈ ગયો છે!</span>
-                        </p>
                     `;
                     navigateTo('success');
                 }
             })
             .catch(error => {
-                console.error('Fatal Network Intercept:', error);
-                alert('Could not connect to Vatan Care Server. Ensure your live Render web service is running and endpoints are verified!');
+                console.error(error);
+                alert('Connection footprint error. Verify Render endpoint pipelines.');
             })
             .finally(() => {
-                // HARD SYSTEM RESET LOADING ENGINE SWITCH
                 submitBtn.disabled = false;
                 loadingText.classList.add('hidden');
                 defaultText.classList.remove('hidden');
