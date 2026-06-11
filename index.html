@@ -19,7 +19,7 @@
             opacity: 1;
             transform: translateY(0);
         }
-       
+        
         /* Strict Dual-Language Layout Toggle Engine */
         .lang-en .text-gu, .lang-gu .text-en {
             display: none !important;
@@ -91,7 +91,6 @@
 </head>
 <body class="bg-slate-50/50 text-slate-900 font-sans antialiased flex flex-col min-h-screen lang-en" id="root-viewport">
 
-    <!-- GLOBAL TOP BANNER NODE -->
     <div class="bg-slate-950 text-white text-xs py-3 px-4 border-b border-slate-800 shrink-0 tracking-wide">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2.5">
             <div class="flex items-center gap-3 font-semibold text-slate-300">
@@ -119,14 +118,13 @@
         </div>
     </div>
 
-    <!-- SYSTEM HEADER CONTROLLER -->
     <header class="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 shadow-sm shrink-0 transition-all">
         <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
-           
+            
             <button onclick="navigateTo('home')" class="flex items-center gap-3.5 text-left focus:outline-none group">
-                <div class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-amber-700 text-white w-14 h-14 rounded-2xl shadow-xl flex items-center justify-center group-hover:rotate-1 transition-transform">
-                    <span class="text-xl font-black tracking-tighter text-amber-400">VC</span>
-                    <div class="absolute -bottom-1 -right-1 bg-amber-500 text-slate-950 text-[10px] w-5 h-5 rounded-md flex items-center justify-center border-2 border-white shadow-sm">
+                <div class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-amber-700 w-14 h-14 rounded-2xl shadow-xl flex items-center justify-center group-hover:rotate-1 transition-transform overflow-hidden">
+                    <img src="FINAL LOGO BLUE .png" alt="Vatan Care Logo" class="w-full h-full object-cover">
+                    <div class="absolute -bottom-1 -right-1 bg-amber-500 text-slate-950 text-[10px] w-5 h-5 rounded-md flex items-center justify-center border-2 border-white shadow-sm z-10">
                         <i class="fa-solid fa-shield"></i>
                     </div>
                 </div>
@@ -138,7 +136,7 @@
                     </span>
                 </div>
             </button>
-           
+            
             <div class="flex items-center gap-6">
                 <nav class="hidden lg:flex items-center gap-8 font-bold text-slate-600 text-xs uppercase tracking-widest">
                     <button id="nav-home" onclick="navigateTo('home')" class="text-amber-600 transition-colors">
@@ -166,11 +164,10 @@
 
     <main class="grow">
 
-        <!-- HOME VIEW FRAMEWORK -->
         <div id="page-home" class="page-view active">
             <section class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white py-16 lg:py-24 px-6 overflow-hidden border-b border-slate-800">
                 <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10 items-center">
-                   
+                    
                     <div class="lg:col-span-7 space-y-8">
                         <div class="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 px-3.5 py-2 rounded-xl text-xs font-bold text-amber-400 tracking-wide uppercase">
                             <i class="fa-solid fa-medal"></i>
@@ -185,7 +182,7 @@
                             <span class="text-en">No matter how many video calls you make or how often you send packages, the distance between you and your loved ones can feel heavier with every passing year. Caring for ageing parents is an emotional journey on its own, but doing it from thousands of miles away comes with unique challenges that love alone cannot solve. This is the story of nearly every Non-Resident Indian (NRI) — a story of love, guilt, longing, and responsibility.</span>
                             <span class="text-gu">તમે ગમે તેટલા વિડીયો કોલ કરો કે પાર્સલ મોકલો, પણ ભૌગોલિક અંતર હંમેશા વધુ ભારે લાગે છે. મોટી ઉંમરના માતા-પિતાની સંભાળ રાખવી એ એક લાગણીશીલ સફર છે, પરંતુ હજારો માઈલ દૂર રહીને જવાબદારી નિભાવવી એવા પડકારો લાવે છે જે માત્ર પ્રેમથી ઉકેલી શકાતા નથી. આ દરેક NRI ની વાર્તા છે — પ્રેમ, અપરાધભાવ (Guilt), ઝંખના અને જવાબદારીની વાર્તા.</span>
                         </p>
-                       
+                        
                         <div class="w-full h-56 sm:h-72 rounded-3xl overflow-hidden shadow-2xl border border-slate-700/40 relative">
                            <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=800&q=80" alt="Elderly Care and Property Management" class="w-full h-full object-cover">
                          </div>
@@ -197,7 +194,7 @@
                             </button>
                         </div>
                     </div>
-                   
+                    
                     <div class="lg:col-span-5 bg-slate-900/60 backdrop-blur-md border border-slate-800 rounded-3xl p-6 sm:p-10 space-y-6 shadow-2xl">
                         <h3 class="text-sm font-black text-amber-400 uppercase tracking-wider border-b border-slate-800 pb-3 flex items-center gap-2">
                             <i class="fa-solid fa-triangle-exclamation"></i>
@@ -213,7 +210,6 @@
                 </div>
             </section>
 
-            <!-- TESTIMONIAL ENGINE -->
             <section class="py-24 px-6 max-w-7xl mx-auto space-y-24">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <div class="space-y-5">
@@ -270,7 +266,6 @@
             </section>
         </div>
 
-        <!-- SERVICES DIRECTORY (PREMIUM GRADIENT GRAPHICS PORTAL) -->
         <div id="page-services" class="page-view">
             <section class="bg-slate-950 text-white py-20 px-6 text-center">
                 <div class="max-w-3xl mx-auto space-y-3">
@@ -283,8 +278,7 @@
             </section>
 
             <section class="max-w-7xl mx-auto py-24 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-               
-                <!-- SERVICE 1 -->
+                
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
                     <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Property inspection and control">
                     <div class="p-8 space-y-3.5 grow">
@@ -298,7 +292,6 @@
                     </div>
                 </div>
 
-                <!-- SERVICE 2 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
                     <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Elderly medical care and escort">
                     <div class="p-8 space-y-3.5 grow">
@@ -312,7 +305,6 @@
                     </div>
                 </div>
 
-                <!-- SERVICE 3 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
                     <img src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Banking and financial liaison">
                     <div class="p-8 space-y-3.5 grow">
@@ -326,7 +318,6 @@
                     </div>
                 </div>
 
-                <!-- SERVICE 4 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
                     <img src="https://images.unsplash.com/photo-1587745416684-47953f16fda3?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="24/7 emergency ambulance response">
                     <div class="p-8 space-y-3.5 grow">
@@ -340,7 +331,6 @@
                     </div>
                 </div>
 
-                <!-- SERVICE 5 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
                     <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Home renovation and repair service">
                     <div class="p-8 space-y-3.5 grow">
@@ -354,7 +344,6 @@
                     </div>
                 </div>
 
-                <!-- SERVICE 6 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
                     <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Digital literacy support for elderly">
                     <div class="p-8 space-y-3.5 grow">
@@ -368,7 +357,6 @@
                     </div>
                 </div>
 
-                <!-- SERVICE 7 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
                     <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Safe elderly transport logistics">
                     <div class="p-8 space-y-3.5 grow">
@@ -382,7 +370,6 @@
                     </div>
                 </div>
 
-                <!-- SERVICE 8 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
                     <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" class="h-48 w-full object-cover" alt="Utility bill payment and automation">
                     <div class="p-8 space-y-3.5 grow">
@@ -391,12 +378,11 @@
                         </h3>
                         <p class="text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
                             <span class="text-en">Clearing electricity, gas pipeline parameters, and outstanding property compliance values safely.</span>
-                            <span class="text-gu">લાઈટ બિલ, સાબરમતી ગેસ બિલ કે નગરપાલિકાનો ટેક્સ ઓફિસ જઈને સમયસર ભરવો જેથી કનેક્શન કપાવાની કોઈ ચિંતા ન રહે.</span>
+                            <span class="text-gu">લાઈટ બિલ, સાબરમતી ગેસ બિલ કે નગરપાલિકાનો ટેક્સ ઓફિસ જઈને સમયસર ભરવો જેથી કનેક્શન કપાવાની કોઈ ચિમતા ન રહે.</span>
                         </p>
                     </div>
                 </div>
 
-                <!-- SERVICE 9 -->
                 <div class="premium-card bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col justify-between">
                     <div class="h-48 w-full bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 flex items-center justify-center text-4xl text-emerald-400">
                         <i class="fa-solid fa-basket-shopping"></i>
@@ -422,14 +408,12 @@
             </div>
         </div>
 
-        <!-- PRICING CONTROLLER (SPLIT WITH PREMIUM MODULES AND RECALCULATED HIGHLIGHTS) -->
         <div id="page-pricing" class="page-view">
             <section class="bg-slate-950 text-white py-12 px-6 text-center">
                 <h2 class="text-3xl font-black tracking-tight">Predictable Fixed Retainers</h2>
                 <p class="text-xs text-slate-400 mt-2">Flat transparent structural rates. Designed cleanly for strategic enterprise transparency.</p>
             </section>
 
-            <!-- SECTION A: PROPERTY CARE (CALCULATED AT FLAT MULTIPLES OF $80) -->
             <section class="max-w-6xl mx-auto pt-16 px-6">
                 <div class="border-b border-gray-200 pb-4 mb-10">
                     <h3 class="text-xl font-black text-slate-900 flex items-center gap-2"><i class="fa-solid fa-building-shield text-slate-700"></i> SECTION A: Property Care Sentinel Retainers</h3>
@@ -437,7 +421,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
-                    <!-- SILVER -->
                     <div class="flex flex-col justify-between">
                         <div id="card-prop-silver" onclick="activatePlanFlow('Property Silver ($80/mo)', 'prop-silver')" class="premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 border-t-slate-400">
                             <div>
@@ -451,7 +434,6 @@
                         <div class="bg-slate-100/80 rounded-xl px-4 py-2.5 mt-3 text-center text-[10px] font-bold text-slate-500 tracking-wide">Month-to-Month Standard Commits</div>
                     </div>
 
-                    <!-- GOLD -->
                     <div class="flex flex-col justify-between">
                         <div id="card-prop-gold" onclick="activatePlanFlow('Property Gold ($480 / 6 months)', 'prop-gold')" class="premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 border-t-amber-500">
                             <div>
@@ -462,7 +444,6 @@
                             </div>
                             <span class="text-xs font-bold text-amber-600 mt-6 block text-right">Select Framework <i class="fa-solid fa-arrow-down ml-1"></i></span>
                         </div>
-                        <!-- EYE-CATCHING SLATE/AMBER DYNAMIC DESIGN BANNER -->
                         <div class="bg-gradient-to-r from-amber-500/10 to-amber-600/5 border border-amber-500/30 rounded-2xl p-3.5 mt-3 text-left shadow-sm flex items-center justify-between gap-3 group hover:border-amber-500 transition-colors">
                             <div class="space-y-0.5">
                                 <span class="text-[11px] font-black text-amber-700 uppercase tracking-wider flex items-center gap-1.5">
@@ -474,7 +455,6 @@
                         </div>
                     </div>
 
-                    <!-- PLATINUM -->
                     <div class="flex flex-col justify-between">
                         <div id="card-prop-platinum" onclick="activatePlanFlow('Property Platinum ($960 / 12 months)', 'prop-platinum')" class="premium-card bg-white p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 border-t-slate-900">
                             <div>
@@ -485,7 +465,6 @@
                             </div>
                             <span class="text-xs font-bold text-slate-950 mt-6 block text-right font-black">Select Framework <i class="fa-solid fa-arrow-down ml-1"></i></span>
                         </div>
-                        <!-- EYE-CATCHING PREMIUM CHARCOAL SAVINGS CONTAINER -->
                         <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 mt-3 text-left shadow-md flex items-center justify-between gap-3 relative overflow-hidden">
                             <div class="absolute -right-4 -bottom-4 text-slate-900 font-black text-5xl select-none pointer-events-none tracking-tighter">25%</div>
                             <div class="space-y-0.5 relative z-10">
@@ -500,7 +479,6 @@
                 </div>
             </section>
 
-            <!-- SECTION B: PARENTAL SUPPORT (CALCULATED AT FLAT MULTIPLES OF $149) -->
             <section class="max-w-6xl mx-auto pt-24 pb-24 px-6">
                 <div class="border-b border-gray-200 pb-4 mb-10">
                     <h3 class="text-xl font-black text-slate-900 flex items-center gap-2"><i class="fa-solid fa-heart-pulse text-blue-600"></i> SECTION B: Parental & Family Support Retainers</h3>
@@ -508,7 +486,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
-                    <!-- SILVER PARENT -->
                     <div class="flex flex-col justify-between">
                         <div id="card-parent-silver" onclick="activatePlanFlow('Parental Silver ($149/mo)', 'parent-silver')" class="premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 border-t-slate-400 relative">
                             <div>
@@ -522,7 +499,6 @@
                         <div class="bg-slate-100/80 rounded-xl px-4 py-2.5 mt-3 text-center text-[10px] font-bold text-slate-500 tracking-wide">Flexible Monthly Operational Layer</div>
                     </div>
 
-                    <!-- GOLD PARENT -->
                     <div class="flex flex-col justify-between">
                         <div id="card-parent-gold" onclick="activatePlanFlow('Parental Gold ($894 / 6 months)', 'parent-gold')" class="premium-card bg-white border border-gray-200 p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-t-4 border-t-blue-500">
                             <div>
@@ -533,7 +509,6 @@
                             </div>
                             <span class="text-xs font-bold text-blue-600 mt-6 block text-right">Select Framework <i class="fa-solid fa-arrow-down ml-1"></i></span>
                         </div>
-                        <!-- EYE-CATCHING HIGH-VALUE AMBER EXTENSION NODES FOR SECT B -->
                         <div class="bg-gradient-to-r from-amber-500/10 to-amber-600/5 border border-amber-400/30 rounded-2xl p-3.5 mt-3 text-left shadow-sm flex items-center justify-between gap-3 group hover:border-amber-500 transition-all">
                             <div class="space-y-0.5">
                                 <span class="text-[11px] font-black text-amber-800 uppercase tracking-wider flex items-center gap-1.5">
@@ -545,7 +520,6 @@
                         </div>
                     </div>
 
-                    <!-- PLATINUM PARENT -->
                     <div class="flex flex-col justify-between">
                         <div id="card-parent-platinum" onclick="activatePlanFlow('Parental Platinum ($1788 / 12 months)', 'parent-platinum')" class="premium-card bg-white p-8 rounded-3xl flex flex-col justify-between h-full cursor-pointer border-2 best-value-card relative shadow-md">
                             <div>
@@ -556,7 +530,6 @@
                             </div>
                             <span class="text-xs font-bold text-blue-600 mt-6 block text-right font-black">Secure 12-Month Access <i class="fa-solid fa-arrow-down ml-1"></i></span>
                         </div>
-                        <!-- COGNITIVE DOMINANCE COBALT BLUE ANNUAL DEPLOYMENT BOX -->
                         <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl p-3.5 mt-3 text-left shadow-lg flex items-center justify-between gap-3 border border-blue-400/20 relative overflow-hidden group">
                             <div class="absolute -right-2 -bottom-2 text-blue-700/30 font-black text-5xl select-none pointer-events-none"><i class="fa-solid fa-star"></i></div>
                             <div class="space-y-0.5 relative z-10">
@@ -571,10 +544,9 @@
                 </div>
             </section>
 
-            <!-- INTERACTIVE FORM INTERFACE CONTROL -->
             <section id="dynamic-services-panel" class="max-w-4xl mx-auto px-6 pb-24 hidden">
                 <div class="bg-white rounded-[32px] shadow-2xl border border-gray-100 p-8 sm:p-12 space-y-10 slide-down-panel">
-                   
+                    
                     <div id="interactive-plan-header" class="bg-gradient-to-r from-slate-900 to-amber-950 text-white rounded-2xl p-5 sm:p-7 shadow-xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border border-amber-400/10">
                         <div class="space-y-1.5">
                             <span class="text-[10px] text-amber-400 font-black tracking-widest uppercase block flex items-center gap-1.5"><i class="fa-solid fa-fingerprint animate-pulse"></i> LIVE REGISTRY PIPELINE</span>
@@ -587,8 +559,7 @@
 
                     <div class="bg-slate-50 border border-gray-100 p-5 sm:p-8 rounded-2xl">
                         <h4 class="text-xs font-black uppercase text-slate-500 tracking-wider mb-5"><i class="fa-solid fa-list-check text-amber-500 mr-1.5"></i> Vatan Care Active Deliverables Matrix</h4>
-                       
-                        <!-- CHIP HOOK ARRAYS -->
+                        
                         <div id="services-prop-silver" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-slate-700">
                             <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Monthly 4K Video Property Walkthrough Logs</div>
                             <div class="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-100 shadow-sm"><i class="fa-solid fa-circle-check text-emerald-500"></i> Structural Leakage Moisture Testing Metrics</div>
@@ -619,7 +590,6 @@
                         </div>
                     </div>
 
-                    <!-- USER INPUT MODULE -->
                     <form onsubmit="handleAdvancedDetailsSubmit(event)" id="vatan-core-form" class="space-y-6 border-t border-gray-100 pt-8">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
@@ -661,7 +631,6 @@
             </section>
         </div>
 
-        <!-- SUCCESS VIEW SCREEN -->
         <div id="page-success" class="page-view">
             <section class="max-w-xl mx-auto my-20 p-10 bg-white border border-gray-100 rounded-3xl shadow-2xl text-center space-y-5">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-600 flex items-center justify-center rounded-full text-2xl mx-auto"><i class="fa-solid fa-circle-check"></i></div>
@@ -685,7 +654,7 @@
             const viewport = document.getElementById('root-viewport');
             const btnEn = document.getElementById('btn-lang-en');
             const btnGu = document.getElementById('btn-lang-gu');
-           
+            
             if (langCode === 'gu') {
                 viewport.classList.remove('lang-en');
                 viewport.classList.add('lang-gu');
@@ -708,32 +677,32 @@
                 view.classList.remove('active');
                 view.style.display = "none";
             });
-           
+            
             const target = document.getElementById('page-' + pageId) || document.getElementById('page-home');
             target.style.display = "block";
-           
+            
             setTimeout(() => {
                 target.classList.add('active');
             }, 10);
-           
+            
             const currentActiveNode = document.getElementById('nav-' + pageId);
             if(currentActiveNode) {
                 currentActiveNode.className = "text-amber-600 transition-colors font-extrabold";
             }
-           
+            
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function activatePlanFlow(planName, typeKey) {
             currentSelectedPlan = planName;
             document.getElementById('target-plan-title').innerHTML = `<i class="fa-solid fa-box-open text-amber-500 mr-2"></i> ${planName}`;
-           
+            
             const arrays = ['prop-silver', 'prop-gold', 'prop-platinum', 'parent-silver', 'parent-gold', 'parent-platinum'];
             arrays.forEach(k => document.getElementById('services-' + k).classList.add('hidden'));
-           
+            
             document.getElementById('services-' + typeKey).classList.remove('hidden');
             document.getElementById('dynamic-services-panel').classList.remove('hidden');
-           
+            
             arrays.forEach(k => {
                 const targetCard = document.getElementById('card-' + k);
                 if(targetCard) {
@@ -746,19 +715,19 @@
                     }
                 }
             });
-           
+            
             if(typeKey === 'parent-platinum') {
                 document.getElementById('card-parent-platinum').className = "premium-card bg-white p-8 rounded-3xl flex flex-col justify-between cursor-pointer border-4 border-blue-600 best-value-card relative transform scale-105 shadow-2xl bg-gradient-to-b from-white to-blue-50/20";
             } else {
                 document.getElementById('card-' + typeKey).className = "premium-card bg-white border-2 border-amber-500 p-8 rounded-3xl flex flex-col justify-between shadow-xl relative transform scale-105 cursor-pointer";
             }
-           
+            
             document.getElementById('dynamic-services-panel').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         function handleAdvancedDetailsSubmit(event) {
             event.preventDefault();
-           
+            
             const nameField = document.getElementById('form-name');
             const phoneField = document.getElementById('form-intl-phone');
             const errorNode = document.getElementById('phone-error-node');
@@ -770,10 +739,10 @@
             errorNode.classList.add('hidden');
 
             const cleanedPhoneDigits = phoneField.value.replace(/[^0-9]/g, '');
-           
+            
             if (cleanedPhoneDigits.length < 7 || cleanedPhoneDigits.length > 15) {
                 phoneField.classList.add('border-red-500', 'ring-2', 'ring-red-200');
-                errorNode.innerText = "❌ Invalid Phone! Please write a valid digit framework.";
+                errorNode.innerText = " Invalid Phone! Please write a valid digit framework.";
                 errorNode.classList.remove('hidden');
                 phoneField.focus();
                 return;
@@ -793,7 +762,7 @@
             loadingText.classList.remove('hidden');
 
             const tunnelUrl = 'https://vatancare-backend-api-tik0.onrender.com/api/bookings/activate';              
-           
+            
             fetch(tunnelUrl, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Bypass-Tunnel-Reminder': 'true' },
